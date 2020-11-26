@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="style.js"></script>
+</head>
+<style>
+  body,html{
+    height: 100%;
+    margin: 0;
+    font-family: Open Sans,Verdana,Arial, Helvetica, sans-serif;
+    background-color: #222222;
+  }
+
+  *{
+     box-sizing: border-box;
+  }
+  /*Css for background image and text*/
+  .bgstyle{
+    color: white;
+    background-image: url(o3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 80%; 
+  }
+ /*To make the textbox transparent*/
+ .transparent,input,textarea{
+  background: transparent;
+  color:white;
+ }
+ /* Button style*/
+ .buttonform{
+   color: white;
+    height: 42px; 
+    width: 132px; 
+    background-color: #FF5A09;
+    font-size: 18px;
+}
+/*Css to increase height and font size of the textbox */
+.formstyle{
+  height:40px; 
+  font-size: 20px;
+  
+}
+</style>
+<body>
+<nav>
+  <div id="navbar">
+  <link rel="stylesheet" href="style.css">
+  <a href="Index.html" id="logo">Udaya</a>
+  <div id="navbar-right">
+    <link rel="stylesheet" href="style.css">
+    <a href="Index.html">Home</a>
+    <a href="CV.html">CV</a>
+    <a href="Blog.html">Blog</a>
+    <a href="Research.html">Research</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+</nav>
+
+<div class="bgstyle" style="padding: 55px;"> 
+
+  <form name="messageForm" onsubmit="validateForm()">
+  <h1 style="margin-top: 11.8vh;">Contact</h1>
+  <p>If you have any question about me or the website contact me via email at<b> udaya.panday@gmail.com</b> or submit you queries using the form below.</p>
+  <div class="transparent" style=" font-size: 20px; ">
+  <p>Name: <br><input class="formstyle" type="text" name="firstname" ></p>
+  <p>Phone: <br><input class="formstyle" type="text" name="phone" ></p>
+  <p> Email:<br><input class="formstyle" type="text" name="email" ></p>
+  
+  <p>Message:<br> <textarea style="height:170px; width: 50%; font-size: 20px;" name="message" rows="10" cols="30" value="message" placeholder="Enter Message"></textarea></p>
+  <p><input class="buttonform" type="submit" value="Submit"></p><br>
+  </div>
+  </form>
+
+  
+</div>
+  <script>
+    function validateForm(){
+      var fname= document.forms["messageForm"]["firstname"].value;
+      var phone= document.forms["messageForm"]["phone"].value;
+      var email= document.forms["messageForm"]["email"].value;
+      
+      var message= document.forms["messageForm"]["message"].value;
+
+      if (fname==""||email==""||message=="") {
+        alert("Please fill the complete form");
+      }
+      else{
+          alert("Thank you");
+        }
+      }
+  </script>
+  </section>
+  </div>
+  </div> 
+  
+  <footer>
+    <section class="footer1" >
+      <section>
+        <a href="Index.html">
+         <img src="1.png" href="Index.html" style="height: 80px; width:100px; border-radius: 79%; ">
+        </a>
+      </section>
+      <section>
+        <p>Copyright &#169; 2019 Udaya Raj Panday</p>
+      </section>
+      <section>
+        Follow me on:
+        <div id="share-buttons">
+        <a href="https://www.facebook.com/tenacious.kings" >
+            <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook">
+          </a>
+          <a href="https://www.instagram.com/udaya.r.panday/" >
+            <img style="height: 60px; width: 60px;" src="ins.png" alt="Instragarm">
+          </a>
+      </section>
+      
+    </section>
+  </footer>
+</body>
+</html>

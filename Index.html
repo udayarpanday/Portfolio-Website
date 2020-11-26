@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="style.js"></script>
+<title>Home</title>
+<style>
+  body,html{
+    height: 100%;
+    margin: 0;
+    font-family: Comic Sans MS,Arial, Helvetica, sans-serif;
+    background-color: #2d302d; 
+  }
+  * {
+    box-sizing: border-box;
+  }
+
+  .bg-image {
+    /* The image used */
+    background-image: url("w1.jpg");
+
+    /* Add the blur effect */
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+
+    /* Full height */
+    min-height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+    /* Position text in the middle of the page/image */
+  .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color:  #F7B733 ;
+    font-weight: bold;
+    border: 4px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 40%;
+    padding: 20px;
+    text-align: center;
+    font-family: Comic Sans MS;
+  }
+  /*Adding button*/
+  .explorebtn{
+    height:40px; 
+    width:90px; 
+    background-color:#F7B733;
+    font-size:16px;
+    border-color: #F7B733;}
+  }
+</style>
+</head>
+
+<body>
+  <div class="bg-image"></div>
+    <div class="bg-text">
+      <h3>Creativity is the greatest rebellion in existence.</h3>
+      <h1 style="font-size:50px">I am Udaya Raj Panday</h1>
+      <p>And this is my website....
+      <button id="myButton" class="explorebtn" >About Me</button>
+      <script >
+        document.getElementById("myButton").onclick = function () {
+        location.href = "CV.html";
+        alert('WELCOME!!!')
+        }
+      </script>
+    </div>
+  </div>
+  <div id="navbar">
+  	<link rel="stylesheet" href="style.css">
+    <a href="Index.html" id="logo">Udaya</a>
+    <div id="navbar-right">
+      <a href="Index.html">Home</a>
+      <a href="CV.html">CV</a>
+      <a href="Blog.html">Blog</a>
+      <a href="Research.html">Research</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</body>
+<footer>
+<section class="footer1" >
+  <section>
+    	Follow me on:
+      <div id="share-buttons">
+      <a href="https://www.facebook.com/tenacious.kings" >
+        <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/udaya.r.panday/" >
+        <img style="height: 60px; width: 60px;" src="ins.png" alt="Instragarm">
+      </a>
+      </div>
+  </section>
+  <section>
+    <p>Copyright &#169; 2019 Udaya Raj Panday</p>
+  </section>
+  <section>
+  	<p>Contact Me:<br><a style="color: #FF5A09;"href="contact.html">udaya.panday@gmail.com</a></p>
+  </section>
+</section>
+</footer>
+</html>
